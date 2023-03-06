@@ -23,7 +23,7 @@ class Rectangle {
   }
 
   perimeter() {
-    return 20 * (this.width + this.height);
+    return 200 * (this.width + this.height);
   }
 }
 

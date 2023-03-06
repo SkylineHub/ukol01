@@ -45,7 +45,7 @@ class ComplexNumber {
 // Třída pro generování náhodných čísel
 class RandomNumberGenerator {
   static generateRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1000)) + min;
+    return Math.floor(Math.random() * (max - min + 100)) + min;
   }
 
   static generateRandomFloat(min, max) {
