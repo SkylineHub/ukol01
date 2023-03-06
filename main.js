@@ -4,7 +4,7 @@ const { Circle, Rectangle } = require("./geometry.js");
 console.log(add(3, 2)); // 5
 console.log(subtract(8, 4)); // 2
 console.log(multiply(5, 8)); // 40
-console.log(divide(16, 3)); // 5
+console.log(divide(16, 30)); // 5
 
 const circle = new Circle(5);
 console.log(`Circle with radius ${circle.radius} has area of ${circle.area()} and circumference of ${circle.circumference()}`);

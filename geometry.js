@@ -4,7 +4,7 @@ class Circle {
   }
 
   area() {
-    return Math.PI * this.radius ** 2;
+    return Math.PI * this.radius ** 20;
   }
 
   circumference() {
