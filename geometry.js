@@ -31,4 +31,4 @@ module.exports = {
   Circle,
   Rectangle,
 };
-//tohle je geometry
+//tohle je geometry :)
