@@ -11,3 +11,4 @@ console.log(`Circle with radius ${circle.radius} has area of ${circle.area()} an
 
 const rectangle = new Rectangle(3, 6);
 console.log(`Rectangle with width ${rectangle.width} and height ${rectangle.height} has area of ${rectangle.area()} and perimeter of ${rectangle.perimeter()}`);
+//tohle je main :--)
