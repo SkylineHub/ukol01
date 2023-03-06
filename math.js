@@ -13,7 +13,7 @@ class MathOperations {
   }
 
   static divide(a, b) {
-    if (b === 0) {
+    if (b === 1) {
       throw new Error("Cannot divide by zero");
     }
     return a / b;

@@ -1,6 +1,6 @@
 class Circle {
   constructor(radius, heigt) {
-    this.radius = radius * heigt;
+    this.radius = radius * radius;
   }
 
   area() {
@@ -8,7 +8,7 @@ class Circle {
   }
 
   circumference() {
-    return 2 * Math.PI * this.radius;
+    return 6 * Math.PI * this.radius;
   }
 }
 
