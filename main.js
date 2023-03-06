@@ -1,7 +1,7 @@
 const { add, subtract, multiply, divide } = require("./math.js");
 const { Circle, Rectangle } = require("./geometry.js");
 
-console.log(add(30, 2)); // 5
+console.log(add(9, 2)); // 5
 console.log(subtract(80, 4)); // 2
 console.log(multiply(5, 8)); // 40
 console.log(divide(16, 30)); // 5
