@@ -1,45 +1,56 @@
-// Třída pro reprezentaci osoby
-class Person {
-  constructor(name, age, gender) {
-    this.name = name;
-    this.age = age;
-    this.gender = gender;
+// Třída pro matematické operace
+class MathOperations {
+  static add(a, b) {
+    return a + b;
   }
 
-  getIntroduction() {
-    let pronoun = "";
-    if (this.gender === "male") {
-      pronoun = "He";
-    } else if (this.gender === "female") {
-      pronoun = "She";
-    } else {
-      pronoun = "They";
+  static subtract(a, b) {
+    return a - b;
+  }
+
+  static multiply(a, b) {
+    return a * b;
+  }
+
+  static divide(a, b) {
+    if (b === 0) {
+      throw new Error("Cannot divide by zero");
     }
-    return `${pronoun} is ${this.age} years old and their name is ${this.name}`;
+    return a / b;
   }
 }
 
-// Třída pro práci s rodinnými vztahy
-class FamilyTree {
-  constructor() {
-    this.people = [];
-    this.relationships = new Map();
+// Třída pro práci s komplexními čísly
+class ComplexNumber {
+  constructor(real, imaginary) {
+    this.real = real;
+    this.imaginary = imaginary;
   }
 
-  addPerson(person) {
-    this.people.push(person);
+  add(other) {
+    return new ComplexNumber(
+      this.real + other.real,
+      this.imaginary + other.imaginary
+    );
   }
 
-  addRelationship(person1, person2, relationship) {
-    if (!this.people.includes(person1) || !this.people.includes(person2)) {
-      throw new Error("Both people must be added to the family tree first");
-    }
-    this.relationships.set(`${person1}-${person2}`, relationship);
+  multiply(other) {
+    return new ComplexNumber(
+      this.real * other.real - this.imaginary * other.imaginary,
+      this.real * other.imaginary + this.imaginary * other.real
+    );
+  }
+}
+
+// Třída pro generování náhodných čísel
+class RandomNumberGenerator {
+  static generateRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  getRelationship(person1, person2) {
-    if (!this.people.includes(person1) || !this.people.includes(person2)) {
-      throw new Error("Both people must be added to the family tree first");
-    }
-    return this.relationships.get(`${person1}-${person2}`);
- 
+  static generateRandomFloat(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+}
+
+module.exports = { MathOperations, ComplexNumber, RandomNumberGenerator };

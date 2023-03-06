@@ -13,9 +13,9 @@ class Circle {
 }
 
 class Rectangle {
-  constructor(width, height) {
+  constructor(width, heigt) {
     this.width = width;
-    this.height = height;
+    this.height = heigt;
   }
 
   area() {
