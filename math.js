@@ -54,3 +54,4 @@ class RandomNumberGenerator {
 }
 
 module.exports = { MathOperations, ComplexNumber, RandomNumberGenerator };
+//tohle je math
