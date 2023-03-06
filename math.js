@@ -1,7 +1,7 @@
 // Třída pro matematické operace
 class MathOperations {
   static add(a, b, c) {
-    return a + b + c + d;
+    return a + b + c + d + a;
   }
 
   static subtract(a, b) {
